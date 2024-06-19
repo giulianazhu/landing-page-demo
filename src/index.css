@@ -1,0 +1,284 @@
+/* GLOBAL CSS */
+
+/* CSS reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  /* Animation for dark mode */
+  transition: background-color 0.3s, border 0.3s;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  /* min-width taken from default react design */
+  min-width: 320px;
+  min-height: 100vh;
+  line-height: 1.5;
+  font-size: 1.6rem;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+*:disabled {
+  cursor: not-allowed;
+}
+
+a {
+  color: inherit;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* nav {
+  height: max-content;
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+} */
+
+/* button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+} */
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+
+/* CSS variables */
+:root {
+  --text-primary: #242424;
+  --text-secondary: #fffffff5;
+  --bg-primary: rgba(247, 247, 247, 0.912);
+  --box-bg-light: #ffffff;
+  --box-bg-gray: #808080;
+  --box-bg-dark: #131313;
+  --box-bg-secondary: #747bff;
+  --box-bg-contrast: #ffa574;
+
+  /* NEW VERSION  */
+  --text-color-primary: #242424;
+  --text-color-secondary: #ffffffde;
+  --text-color-dark: #242424;
+  --text-color-light: #ffffffde;
+  --text-light: #ffffffbe;
+  --bg-color-main: rgba(247, 247, 247, 0.912);
+  --bg-color-light: #ffffff;
+  --bg-color-dark: #131313;
+  --bg-color-primary: #747bff;
+  --bg-color-secondary: #808080;
+  --bg-color-contrast: #ffa574;
+}
+/* #1b004e5b */
+
+.darkmode {
+  --text-color-primary: #ffffffde;
+  --text-color-secondary: #242424;
+  --bg-primary: #242424;
+  --box-bg-secondary: #0d0d0d;
+  --color-light-primary: #ffffffde;
+  --color-light-secondary: #ffffff8a;
+  --box-bg-contrast: #0e0e11;
+  --color-theme-secondary: #171947;
+  --color-contrast-secondary: #4f280f;
+  --bg-color-main: #000000e3;
+}
+
+/* CUSTOM STYLING  */
+/* body wraps arn div id="root" */
+#root {
+  display: grid;
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  grid-template-rows: 1fr max-content;
+  background-color: var(--bg-color-main);
+}
+
+main {
+  max-width: 1000px;
+  margin-inline: auto;
+  padding: 3em;
+}
+
+@media (max-width: 25rem) {
+  main {
+    padding: 1.5em;
+  }
+}
+
+section {
+  /* border: solid 1px var(--text-primary); */
+  margin-block: 8em;
+  &.form-section {
+    margin-block-start: 6em;
+  }
+}
+
+/* @media query div {
+  margin: 0.3em;
+  padding: 1em;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-block: 1em;
+  text-align: center;
+}
+
+h1,
+h2,
+h4,
+span,
+li {
+  color: var(--text-color-primary);
+}
+
+h2 {
+  text-align: center;
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+p {
+  margin-block: 0.1em;
+  padding-inline: 0.2em;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* to be finalized  */
+img {
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.form-wrap {
+  flex: 1 1 150px;
+}
+
+.form-wrap h1 {
+  text-align: initial;
+}
+
+.img-wrap {
+  display: flex;
+  justify-content: center;
+  margin-block: 1em;
+  padding: initial;
+}
+
+/* to be finalized  */
+.form-wrap + .img-wrap {
+  flex: 0 1 300px;
+  position: relative;
+  margin-inline: auto;
+}
+
+button:hover {
+  transform: scale(1.05);
+  font-weight: bold;
+}
+
+div.mode {
+  position: fixed;
+  top: 10%;
+  right: 0%;
+  :hover {
+    color: var(--box-bg-secondary);
+  }
+  div & {
+    width: 100px;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+  }
+}

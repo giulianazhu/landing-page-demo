@@ -1,0 +1,21 @@
+.footer {
+  /* block-size: auto; */
+  background-color: var(--box-bg-contrast);
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.footer ul {
+  margin: 4em;
+  width: max-content;
+}
+
+.title {
+  text-align: initial;
+}
+
+.li {
+  line-height: 2em;
+}

@@ -1,0 +1,29 @@
+.container {
+  background-color: var(--bg-color-primary);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.li {
+  display: flex;
+  align-items: center;
+  margin: 2em 1em;
+}
+
+.span {
+  display: inline-flex;
+}
+
+.text {
+  display: inline;
+  margin-inline-start: 1em;
+}
+
+.btn {
+  background-color: var(--box-bg-light);
+  color: var(--text-primary);
+  margin: 1em;
+  font-size: 1.3em;
+}
