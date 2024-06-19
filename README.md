@@ -9,3 +9,7 @@ https://www.hype.it/
 - Responsive design
 - CSS module based component styling
 - Light and Dark Mode switch based on css custom variable values
+
+### Link to the live demo
+
+https://bank-landing-demo.netlify.app/home
