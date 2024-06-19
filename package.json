@@ -2,7 +2,7 @@
   "name": "landing-demo",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://github.com/giulianazhu/landing-page-demo",
+  "homepage": "https://giulianazhu.github.io/landing-page-demo",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
