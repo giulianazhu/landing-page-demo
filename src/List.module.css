@@ -22,8 +22,9 @@
 }
 
 .btn {
-  background-color: var(--box-bg-light);
-  color: var(--text-primary);
+  background-color: var(--bg-color-main);
+  color: var(--text-color-primary);
   margin: 1em;
   font-size: 1.3em;
+  border: 1px solid var(--bg-color-light);
 }

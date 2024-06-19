@@ -1,8 +1,8 @@
 .box {
   border-radius: 10px;
   padding: 1em;
+  padding-block-end: 3em;
   min-width: 200px;
-  /* flex settings */
   flex: 1 1;
   display: flex;
   flex-direction: column;
@@ -30,16 +30,16 @@
 }
 
 .dark {
-  background-color: var(--box-bg-dark);
-  color: var(--text-secondary);
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-light);
 }
 
-.gray {
-  background-color: var(--box-bg-gray);
-  color: var(--text-secondary);
+.secondary {
+  background-color: var(--bg-color-secondary);
+  color: var(--text-color-light);
 }
 
 .contrast {
-  background-color: var(--box-bg-contrast);
-  color: var(--text-secondary);
+  background-color: var(--bg-color-contrast);
+  color: var(--text-color-dark);
 }

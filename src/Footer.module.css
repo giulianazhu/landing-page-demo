@@ -1,21 +1,23 @@
 .footer {
   /* block-size: auto; */
-  background-color: var(--box-bg-contrast);
+  background-color: var(--bg-color-contrast);
   display: flex;
   flex-flow: wrap;
   justify-content: space-between;
-  gap: 1em;
+  row-gap: 4em;
+  padding: 4em;
 }
 
 .footer ul {
-  margin: 4em;
   width: max-content;
 }
 
 .title {
   text-align: initial;
+  color: var(--text-color-dark);
 }
 
 .li {
   line-height: 2em;
+  color: var(--text-color-dark);
 }

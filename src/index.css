@@ -117,41 +117,28 @@ button:focus-visible {
 
 /* CSS variables */
 :root {
-  --text-primary: #242424;
-  --text-secondary: #fffffff5;
-  --bg-primary: rgba(247, 247, 247, 0.912);
-  --box-bg-light: #ffffff;
-  --box-bg-gray: #808080;
-  --box-bg-dark: #131313;
-  --box-bg-secondary: #747bff;
-  --box-bg-contrast: #ffa574;
-
   /* NEW VERSION  */
   --text-color-primary: #242424;
   --text-color-secondary: #ffffffde;
   --text-color-dark: #242424;
   --text-color-light: #ffffffde;
-  --text-light: #ffffffbe;
   --bg-color-main: rgba(247, 247, 247, 0.912);
   --bg-color-light: #ffffff;
   --bg-color-dark: #131313;
   --bg-color-primary: #747bff;
   --bg-color-secondary: #808080;
   --bg-color-contrast: #ffa574;
+  --mode-color-switch: #1b004e5b;
 }
-/* #1b004e5b */
 
 .darkmode {
   --text-color-primary: #ffffffde;
   --text-color-secondary: #242424;
-  --bg-primary: #242424;
-  --box-bg-secondary: #0d0d0d;
-  --color-light-primary: #ffffffde;
-  --color-light-secondary: #ffffff8a;
-  --box-bg-contrast: #0e0e11;
-  --color-theme-secondary: #171947;
-  --color-contrast-secondary: #4f280f;
-  --bg-color-main: #000000e3;
+  --bg-color-main: #242424;
+  --bg-color-primary: #212457;
+  --bg-color-secondary: #252633;
+  --bg-color-contrast: #7c8bc5;
+  --mode-color-switch: #fdf670;
 }
 
 /* CUSTOM STYLING  */
@@ -178,17 +165,11 @@ main {
 }
 
 section {
-  /* border: solid 1px var(--text-primary); */
   margin-block: 8em;
   &.form-section {
     margin-block-start: 6em;
   }
 }
-
-/* @media query div {
-  margin: 0.3em;
-  padding: 1em;
-} */
 
 h1,
 h2,
@@ -266,17 +247,20 @@ button:hover {
 
 div.mode {
   position: fixed;
-  top: 10%;
-  right: 0%;
+  top: 5em;
+  right: -2em;
+  color: var(--text-color-primary);
   :hover {
-    color: var(--box-bg-secondary);
+    color: var(--mode-color-switch);
   }
   div & {
     width: 100px;
-    padding: 2em;
+    padding: 1em;
     display: flex;
-    justify-content: center;
+    align-items: center;
     user-select: none;
+    border-radius: 50px;
+    background-color: var(--bg-color-secondary);
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */

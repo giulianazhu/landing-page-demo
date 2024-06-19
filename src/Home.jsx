@@ -37,8 +37,6 @@ export default function Home() {
         </Container>
       </section>
 
-      {/* add carousel */}
-
       <section>
         <h2> What can you do with ### </h2>
       </section>
@@ -119,7 +117,7 @@ export default function Home() {
               officiis in ab eveniet facere velit fugiat possimus vitae officia.
             </p>
           </Box>
-          <Box type="gray" headline="Headline">
+          <Box type="secondary" headline="Headline">
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste
               officiis in ab eveniet facere velit fugiat possimus vitae officia.
@@ -155,7 +153,7 @@ export default function Home() {
             </div>
           </Box>
 
-          <Box type="gray" headline="Headline">
+          <Box type="secondary" headline="Headline">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Reiciendis consectetur ullam laborum minima dicta hic, incidunt
