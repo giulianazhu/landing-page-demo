@@ -20,12 +20,12 @@ export default function Home() {
 
   useEffect(() => {
     const images = document.querySelectorAll("img");
-    for (let img of images) {
-      img.setAttribute("data-aos", "fade-up");
+    for (let i = 1; i < images.length; i++) {
+      images[i].setAttribute("data-aos", "fade-up");
     }
 
     Aos.init({
-      duration: 1500,
+      duration: 1200,
       once: true,
     });
   }, []);
