@@ -19,17 +19,15 @@ export default function Home() {
   }
 
   useEffect(() => {
-    Aos.init({
-      duration: 1500,
-      once: true,
-    });
-
     const images = document.querySelectorAll("img");
     for (let img of images) {
       img.setAttribute("data-aos", "fade-up");
     }
 
-    Aos.refresh();
+    Aos.init({
+      duration: 1500,
+      once: true,
+    });
   }, []);
 
   return (
