@@ -1,0 +1,47 @@
+.ticker {
+  /* background-color: grey; */
+  width: 100vw;
+  font-size: 1.5em;
+  overflow: hidden;
+  display: flex;
+}
+
+.list {
+  display: flex;
+  padding-block: 1em;
+  gap: 5em;
+  animation: ticker 25s infinite linear;
+}
+
+.ticker li {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  padding: 0 0.5em;
+}
+
+.ticker span {
+  display: flex;
+  margin-inline: 0.2em;
+}
+
+.ticker li:first-child {
+  margin-inline-start: 5em;
+}
+
+.ticker span:first-child {
+  background-color: var(--bg-color-contrast);
+  border-radius: 50%;
+  padding: 0.3em;
+  color: white;
+}
+
+.ticker span:nth-child(2) {
+  font-weight: 500;
+}
+
+@keyframes ticker {
+  100% {
+    transform: translateX(-100%);
+  }
+}

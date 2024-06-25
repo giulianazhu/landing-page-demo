@@ -12,19 +12,25 @@ export default function List() {
           <span className={styles.span}>
             <FaRegClock size={30} />
           </span>
-          <p className={styles.text}>Lorem ipsum dolor sit amet consectetur</p>
+          <span className={styles.text}>
+            Lorem ipsum dolor sit amet consectetur
+          </span>
         </li>
         <li className={styles.li}>
           <span className={styles.span}>
             <BsFillPiggyBankFill size={30} />
           </span>
-          <p className={styles.text}>Lorem ipsum dolor sit amet consectetur</p>
+          <span className={styles.text}>
+            Lorem ipsum dolor sit amet consectetur
+          </span>
         </li>
         <li className={styles.li}>
           <span className={styles.span}>
             <RiBankCard2Fill size={30} />
           </span>
-          <p className={styles.text}>Lorem ipsum dolor sit amet consectetur</p>
+          <span className={styles.text}>
+            Lorem ipsum dolor sit amet consectetur
+          </span>
         </li>
       </ul>
       <button className={styles.btn}>Register Now</button>

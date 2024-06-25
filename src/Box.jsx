@@ -14,7 +14,7 @@ function Headline({ children }) {
 }
 
 function Text({ children }) {
-  return <p>{children}</p>;
+  return <div>{children}</div>;
 }
 
 Box.Headline = Headline;
